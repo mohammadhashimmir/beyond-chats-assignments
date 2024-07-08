@@ -1,0 +1,21 @@
+:root {
+  --main-color: #0e1621;
+  --primary-color: #17212b;
+  --secondary-color: #232f3d;
+  --text-color: white;
+  --chatbox-color: #182533;
+  --border-right: 1px solid black;
+  --border-top: 1px solid black;
+  --border-bottom: 1px solid black;
+}
+
+[data-theme='light'] {
+  --main-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #f1f1f1;
+  --text-color: black;
+  --chatbox-color: #effdde;
+  --border-right: 1px solid #9b9fa4;
+  --border-top: 1px solid #9b9fa4;
+  --border-bottom: 1px solid #9b9fa4;
+}

@@ -1,0 +1,54 @@
+.chatListDivHidden {
+    flex: 33.5 1 0;
+    background-color: var(--primary-color);
+    height: 100vh;
+    margin-top: 6vh;
+    overflow-y: auto;
+    border-right: var(--border-right);
+}
+
+.chatListDiv {
+    margin-top: 6vh;
+    flex: 33.5 1 0;
+    background-color:var(--primary-color);
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #9b9fa4;
+}
+
+@media (max-width: 768px) {
+    .chatListDiv {
+        flex-grow: 1;
+    }
+    .chatListDivHidden {
+        flex-grow: 1;
+    }
+}
+
+.chatListDiv::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chatListDiv::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
+
+.chatListDiv::-webkit-scrollbar-thumb {
+    background-color: #9b9fa4;
+    border-radius: 4px;
+    height: 90vh;
+}
+
+.chatListDivHidden::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chatListDivHidden::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+.chatListDivHidden::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    height: 90vh;
+}

@@ -1,0 +1,96 @@
+.eachMessage {
+
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    width: 40%;
+}
+
+.eachThumbnail {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 10px;
+    color: white;
+    flex-shrink: 0;
+
+}
+
+.inboxMain {
+    margin-top: 7vh;
+    padding-bottom: 10vh;
+}
+
+.eachMain {
+    background-color:var(--chatbox-color);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px 20px 20px 0px;
+    flex-shrink: 1;
+}
+
+.eachTime {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+    font-size: 0.9em;
+    color: #9b9fa4
+}
+
+.userText {
+    color: var(--text-color);
+}
+.hoverDate{
+    display: flex;
+    width: 66.5%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-top: 7vh;
+}
+.dateWrapper{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--text-color);
+    border-radius: 12px;
+     width:10%;
+      text-align:center;
+}
+.dateWrapperHidden{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--text-color);
+    border-radius: 12px;
+     width:10%;
+      text-align:center;
+      display: none;
+}
+.masterDiv{
+width:100%;
+ height:100vh;
+  overflow-y:auto 
+}
+
+.masterDiv::-webkit-scrollbar{
+    width: 5px;
+}
+.masterDiv::-webkit-scrollbar-track {
+    background-color : #232F3D;
+  }
+  .masterDiv::-webkit-scrollbar-thumb {
+    background-color : #9b9fa4;
+    border-radius: 4px;
+    height: 90vh;
+  }
+  @media (max-width: 768px) {
+    .masterDiv{
+        width: 100%;
+    }
+    .dateWrapper{
+        width: 20%;
+    }
+}

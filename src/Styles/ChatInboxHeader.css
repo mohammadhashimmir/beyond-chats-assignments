@@ -1,0 +1,65 @@
+.inboxHeader{
+    display: flex;
+    background-color: aqua;
+    height: 6.5vh;
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 66.5%; 
+    top: 0;
+    border-bottom: var(--border-bottom);
+}
+.headerLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+.headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    font-size: 25px;
+    color:#9b9fa4;
+}
+.inboxThumbnail {
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:600;
+    font-size: 20px;;
+    color: white;
+}
+.headerLeftBack{
+    margin-left: 12px;
+    font-size: 25px;
+    color:#9b9fa4; ;
+
+}
+.inboxThumbnail{
+    margin-left: 12px;
+}
+.userDetails{
+    margin-left: 10px;
+}
+.userName{
+    color: var(--text-color);
+    font-size: 1em;
+}
+.lastSeen{
+    color:#9b9fa4;
+    font-size: 0.9em;
+}
+
+.headerRight > div{
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .inboxHeader{
+        width: 100%;
+    }
+}
