@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     font-weight:600;
-    font-size: 20px;;
+    font-size: 20px;
     color: white;
 }
 .headerLeftBack{
@@ -61,5 +61,25 @@
 @media (max-width: 768px) {
     .inboxHeader{
         width: 100%;
+    }
+}
+@media(max-width :480px){
+    .headerLeftBack{
+        font-size: 20px;
+    }
+    .inboxThumbnail{
+        width: 35px;
+        height: 35px;
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .userName{
+        font-size: 0.9em;
+    }
+    .lastSeen{
+        font-size: 0.7em;
+    }
+    .headerRight{
+        font-size: 20px;
     }
 }

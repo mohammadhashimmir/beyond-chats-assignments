@@ -50,19 +50,30 @@ function App() {
   useEffect(() => {
     if (windowWidth <= 768) {
       setShowMain(false);
-      setShowList(true)
+      setShowList(true);
     } else {
       setShowMain(true);
       setShowList(true)
     }
   }, [windowWidth]);
+
   function mobileSwitch() {
-    setShowMain(true);
-    setShowList(true)
+
+    if (windowWidth <= 768) {
+      setShowList(false)
+      setShowMain(true);
+    } else {
+      setShowList(true)
+    }
   }
+  
   function returnMobileSwitch() {
-    setShowMain(false);
-    setShowList(true)
+    if (windowWidth <= 768) {
+      setShowList(true)
+      setShowMain(false);
+    } else {
+      setShowList(true)
+    }
   }
 
   // theme toggler 

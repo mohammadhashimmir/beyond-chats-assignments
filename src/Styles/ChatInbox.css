@@ -93,4 +93,7 @@ width:100%;
     .dateWrapper{
         width: 20%;
     }
+    .eachMessage{
+        width: 50%;
+    }
 }
